@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+        <title>OpenFaaS Cloud: heads in the clouds</title>
+        <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:  #435FE1;
+            color: white;
+        }
+        #event-table {
+            font-size: 18pt;
+            border-color: white;
+            width: 80%;
+        }
+        table, th, td {
+          border: 1px solid white;
+        }
+        </style>
+    </head>      
+<body>
+    <div>
+        <h2>OpenFaaS Upcoming Events and Talks</h2>
+        <table id="event-table">
+            <thead>
+                <th>Event</th>
+                <th>City</th>
+            </thead>
+            {{range .Events}}
+            <tr>
+                <td>{{.Name}}</td>
+                <td>{{.City}}</td>
+                {{end}}
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

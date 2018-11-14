@@ -1,0 +1,13 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  weather-demo:
+    lang: go
+    handler: ./weather-demo
+    image: weather-demo:latest
+    environment:
+      combine_output: false
+      content_type: text/html
+

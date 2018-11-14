@@ -1,0 +1,41 @@
+[
+    {
+      "content":
+        "Serverless Computing London: FaaS and Furious – 0 to Serverless in 60 Seconds, Anywhere",
+      "start": "2018-11-12",
+      "speaker": "Alex Ellis",
+      "location": "London, UK",
+      "link":
+        "https://serverlesscomputing.london/sessions/faas-furious-0-serverless-60-seconds-anywhere/"
+    },
+    {
+      "content": "OpenFaas on Kubernetes",
+      "start": "2018-11-17",
+      "speaker": "Vivek Singh",
+      "location": "Bangalore, IN",
+      "link":
+        "https://www.meetup.com/kubernetes-openshift-India-Meetup/events/255794614"
+    },
+    {
+      "content": "GOTO Copenhagen: Serverless Beyond the Hype",
+      "start": "2018-11-19",
+      "speaker": "Alex Ellis",
+      "location": "Copenhagen, DK",
+      "link": "https://gotocph.com/2018/sessions/592"
+    },
+    {
+      "content": "The FaaS & The Furious",
+      "start": "2018-11-27",
+      "speaker": "Burton Rheutan",
+      "location": "Austin, TX",
+      "link": "https://www.meetup.com/CloudAustin/events/gxwbkpyxpbbc/"
+    },
+    {
+      "content":
+        "KubeCon + CloudNativeCon: Digital Transformation of Vision Banco Paraguay with Serverless Functions",
+      "start": "2018-12-13",
+      "speaker": "Alex Ellis & Patricio Diaz",
+      "location": "Seattle, WA",
+      "link": "https://sched.co/GraO"
+    }
+  ]
