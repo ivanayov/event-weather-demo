@@ -3,14 +3,26 @@
       "content":
         "Serverless Computing London: FaaS and Furious - 0 to Serverless in 60 Seconds, Anywhere",
       "start": "2018-11-12",
+      "month": "November",
       "speaker": "Alex Ellis",
       "location": "London, UK",
       "link":
         "https://serverlesscomputing.london/sessions/faas-furious-0-serverless-60-seconds-anywhere/"
     },
     {
+      "content":
+        "ISTA Conf Sofia: Functions as a Service - The Easy Way",
+      "start": "2018-11-15",
+      "month": "November",
+      "speaker": "Ivana Yovcheva",
+      "location": "Sofia, BG",
+      "link":
+        "https://www.istacon.org/#Agenda"
+    },
+    {
       "content": "OpenFaas on Kubernetes",
       "start": "2018-11-17",
+      "month": "November",
       "speaker": "Vivek Singh",
       "location": "Bangalore, IN",
       "link":
@@ -19,6 +31,7 @@
     {
       "content": "GOTO Copenhagen: Serverless Beyond the Hype",
       "start": "2018-11-19",
+      "month": "November",
       "speaker": "Alex Ellis",
       "location": "Copenhagen, DK",
       "link": "https://gotocph.com/2018/sessions/592"
@@ -26,16 +39,18 @@
     {
       "content": "The FaaS & The Furious",
       "start": "2018-11-27",
+      "month": "November",
       "speaker": "Burton Rheutan",
-      "location": "Austin, TX",
+      "location": "Austin, US",
       "link": "https://www.meetup.com/CloudAustin/events/gxwbkpyxpbbc/"
     },
     {
       "content":
         "KubeCon + CloudNativeCon: Digital Transformation of Vision Banco Paraguay with Serverless Functions",
       "start": "2018-12-13",
+      "month": "December",
       "speaker": "Alex Ellis & Patricio Diaz",
-      "location": "Seattle, WA",
+      "location": "Seattle, US",
       "link": "https://sched.co/GraO"
     }
   ]

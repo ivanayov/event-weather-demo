@@ -1,7 +1,18 @@
 import requests, json, os, sys
 
 def handle(req):
-    city = req
+
+    city = ""
+    if len(req) > 0:
+        city = req
+    else:
+        path = os.environ['Http_Path']
+        pathArr = path.split("/")
+        city = pathArr[1]
+
+    if len(city) == 0:
+        sys.exit("Failed to get city from request and/or query")
+        return
 
     with open("/var/openfaas/secrets/weather-api-secret") as f:
         appid = f.read().strip()
@@ -23,8 +34,10 @@ def handle(req):
     if res.status_code != 200:
         sys.exit("Error accessing wheather api endpoint %s, expected: %d, got: %d\n" % (url, 200, res.status_code))
 
-    weather = res.json()['weather']
+    weather = res.json()['weather'][0]
     main = res.json()['main']
     wind = res.json()['wind']
 
-    return "Weather: %s, main: %s, wind: %s" % (weather, main, wind)
+    res = {"weather":weather, "main":main, "wind":wind}
+
+    return json.dumps(res)

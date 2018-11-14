@@ -1,19 +1,20 @@
 provider:
   name: faas
-  gateway: http://127.0.0.1:8080
+  gateway: https://gateway.ivana.smykla.io
 
 functions:
   weather-demo:
     lang: go
     handler: ./weather-demo
-    image: weather-demo:latest
+    image: docwareiy/weather-demo:0.1.0
     environment:
       combine_output: false
       content_type: text/html
+      weather_app_gateway_url: https://gateway.ivana.smykla.io
   weather-app:
     lang: python
     handler: ./weather-app
-    image: docwareiy/weather-app:0.1.2
+    image: docwareiy/weather-app:0.1.5
     environment:
       api-endpoint: http://api.openweathermap.org
       api-path: /data/2.5/weather

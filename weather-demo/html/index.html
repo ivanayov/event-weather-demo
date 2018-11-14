@@ -25,11 +25,17 @@
             <thead>
                 <th>Event</th>
                 <th>City</th>
+                <th>Weather</th>
             </thead>
             {{range .Events}}
-            <tr>
-                <td>{{.Name}}</td>
-                <td>{{.City}}</td>
+            <tr align="center">
+                <td align="center">{{.Name}}</td>
+                <td align="center">{{.City}}</td>
+                <td align="center">
+                    <img src="{{.WeatherPic}}" style="max-width:8%;">
+                    {{.Weather}}
+                    <img src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Celsius-icon.png" style="max-width:8%; filter: invert(100%)">
+                </td>
                 {{end}}
             </tr>
         </table>
