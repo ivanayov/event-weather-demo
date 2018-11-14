@@ -10,4 +10,15 @@ functions:
     environment:
       combine_output: false
       content_type: text/html
+  weather-app:
+    lang: python
+    handler: ./weather-app
+    image: docwareiy/weather-app:0.1.2
+    environment:
+      api-endpoint: http://api.openweathermap.org
+      api-path: /data/2.5/weather
+    labels:
+      api-version: "2.5"
+    secrets:
+      - weather-api-secret
 
